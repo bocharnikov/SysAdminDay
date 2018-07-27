@@ -1,10 +1,17 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-today=`date +%d`
-days=24
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
 
-if (($today > $days)); then
+cur_day=`date +%d`
+cur_month=`date +%m`
+day="27"
+month="07"
 
-echo "Поздравляю, сегодня $today-ое июля. День системного администратора! Первый тост за localhost." | mail -s "C днём системного администратора!" you@gmail.com
 
+if [ "$day" = "$cur_day" ]; then
+    if [ "$month" = "$cur_month" ]; then
+        echo "${green}Happy SysAdmin Day!${reset}"
+    fi
 fi
