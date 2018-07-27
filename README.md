@@ -5,5 +5,5 @@
 ## Использование
 
 ```
-0 8 * 7 5 /root/SysAdminDay.sh
+sh SysAdminDay.sh
 ```
