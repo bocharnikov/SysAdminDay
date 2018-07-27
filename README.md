@@ -5,5 +5,5 @@
 ## Использование
 
 ```
-sh SysAdminDay.sh
+bash SysAdminDay.sh
 ```
